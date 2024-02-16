@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/TitleLayout"
+    tools:context=".MainActivity3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonLayout2">
+        <EditText
+            android:id="@+id/notepadTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="@string/enter_title"/>
+
+        <EditText
+            android:id="@+id/notepadContent2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/notepadTitle2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:hint="@string/enter_content"
+            android:gravity="top"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:layout_marginStart="100dp"/>
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/update"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/TitleLayout"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonLayout">
+        <EditText
+            android:id="@+id/notepadTitle"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="@string/enter_title"/>
+
+        <EditText
+            android:id="@+id/notepadContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/notepadTitle"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="30dp"
+            android:hint="@string/enter_content"
+            android:gravity="top"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:text="@string/save"/>
+    </LinearLayout>
+</RelativeLayout>
